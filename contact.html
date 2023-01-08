@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="header header-home main-grid">
+    <header class="header main-grid">
         <div class="header-content">
             <a href="index.html" class="logo-link">
                 <img src="./img/logo.png" alt="Logo of the site" class="logo">
@@ -24,48 +24,36 @@
             <nav class="nav">
                 <button aria-label="Close navigation" class="close-nav" >&times;</button>
                 <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link current-page" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about-us.html">about us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+                    <li class="nav-item"><a class="nav-link current-page" href="contact.html">contact</a></li>
                 </ul>
             </nav>
     </div>
     </header>
-    <main role="main" class="main">
-        <section class="hero main-grid">
-            <h1 class="hero-title">The only marketing agency <span class="hero-title-span">on a mission from God</span>, fully dedicated to increase your web traffic. </h1>
-            <p class="hero-subtitle">
-                We're two brothers from Chicago that are trying to pay back our debt. We can help you with SEO, SEM content marketing and whatever else.
+    <main role="main" class="contact-container main-grid" >
+        <h1 class="page-title">Contact</h1>
+        <p class="page-subtitle">
+            Let us know how we can help you need and 
+            we'll drive over to your place in our Bluesmobile the following day to discuss the deal.
+        </p>
+        <img src="./img/contact.jpg" alt="" class="contact-img main-img">
+        <div class="main-text">
+            <h2 class="col-title ">Getting in touch with us</h2>
+            <p> You can either use the form or
+                <a href="#" class="contact-link">send us an email</a>.
+                I'll get back in touch with you as soon as possible!
             </p>
-            <a href="" class="btn btn-primary">contact us</a>
-        </section>
-        <section class="info main-grid">
-            <div class="about-us col">
-                <h2 class="col-title col-title-centered">
-                    About us
-                </h2>
-                <p class="col-body">
-                    We grew up in downtown Chicago, and we used to play in a band. <strong>Jake loves fried chicken</strong>, and <strong>Elwood loves dry white toast</strong>.
-                </p>
-            </div>
-            <div class="our-skills col">
-                <h2 class="col-title col-title-centered">
-                    Our kills
-                </h2>
-                <p class="col-body">
-                    Elwood is an expert in <strong>SEO, SEM, and driving from the police.</strong> Jake is our social media specialist, and he has an amazing voice.
-                </p>
-            </div>
-            <div class="get-in-touch col">
-                <h2 class="col-title col-title-centered">
-                    Get in touch
-                </h2>
-                <p class="col-body">
-                    Send us an email with some info about what help you need and
-                    we'll drive over to your place in our Bluesmobile the following day to discuss the deal.
-                </p>
-            </div>
-        </section>
+        </div>
+        <form action="submit" class="form" method="POST" id="contact-form" >
+            <label class="first-name-label" for="first-name">First Name</label>
+            <input class="first-name-input" id='first-name' type="text" required>
+            <label class="last-name-label" for="last-name">Last Name</label>
+            <input class="last-name-input" id='last-name' type="text" required>
+            <label class="message-label" for="message">Message</label>
+            <textarea class="message-input" id="message" type="text" name="message" form="contact-form" required> </textarea>
+            <button type="submit" class="btn btn-primary btn-form">send</button>
+        </form>
     </main>
     <footer class="footer main-grid">
         <div class="footer-main">
